@@ -14,8 +14,7 @@ public class MainClass
 
         System.out.println(map.get(student1)); // Output: 1
         System.out.println(map.get(student2)); // Output: 2
-
-        Student student3 = new Student("John", 12345);
+        Student student3 = new Student("Joh", 12345);
         System.out.println(map.get(student3)); // Output: 1 (since equals and hashCode are overridden)
 
         map.remove(student2);
