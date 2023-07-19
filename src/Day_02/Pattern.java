@@ -1,5 +1,7 @@
 package Day_02;
 
+import java.util.HashMap;
+
 public class Pattern
 {
     public static void main(String[] args)
