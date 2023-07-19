@@ -92,4 +92,28 @@ public class MyHashMap
             current = current.next;
         }
     }
+    @Override
+    public String toString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{ ");
+        boolean firstPair = true;
+
+        for (int i = 0; i < table.length; i++)
+        {
+            Node current = table[i];
+            while (current != null)
+            {
+                if (!firstPair)
+                {
+                    sb.append(", ");
+                }
+                sb.append(current.key).append(": ").append(current.value);
+                firstPair = false;
+                current = current.next;
+            }
+        }
+        sb.append(" }");
+        return sb.toString();
+    }
 }

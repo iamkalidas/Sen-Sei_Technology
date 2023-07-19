@@ -9,6 +9,8 @@ public class MyClass
         myHashMap.put("banana", "yellow");
         myHashMap.put("orange", "juicy");
 
+        System.out.println(myHashMap);
+
         System.out.println("apple: " + myHashMap.get("apple")); // Output: apple: sweet
         System.out.println("banana: " + myHashMap.get("banana")); // Output: banana: yellow
         System.out.println("orange: " + myHashMap.get("orange")); // Output: orange: juicy
@@ -16,5 +18,7 @@ public class MyClass
 
         myHashMap.remove("apple");
         System.out.println("apple after removal: " + myHashMap.get("apple")); // Output: apple after removal: null
+
+        System.out.println(myHashMap);
     }
 }
