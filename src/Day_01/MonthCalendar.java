@@ -4,7 +4,8 @@ import java.time.LocalDate;
 import java.time.YearMonth;
 import java.util.Scanner;
 
-public class MonthCalendar {
+public class MonthCalendar
+{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
